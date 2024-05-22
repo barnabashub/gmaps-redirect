@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "GMaps Redirector",
+    "version": 1.0,
+    "description": "Redirects to Google Maps search based on the 'q' parameter in the URL.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Redirect",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
+  
