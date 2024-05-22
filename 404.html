@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirecting ...</title>
+</head>
+<body>
+    <p>Redirecting...</p>
+    <script>
+        // JavaScript to extract the 'q' parameter from the URL
+        function getQueryParam(param) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(param);
+        }
+
+        // Get the value of 'q' parameter
+        const queryParamValue = getQueryParam('q');
+
+        // Decode the URL-encoded string
+        const decodedValue = decodeURIComponent(queryParamValue);
+
+        // Display the result
+        console.log("decodedValue");
+    </script>
+</body>
+</html>
