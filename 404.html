@@ -7,6 +7,7 @@
 </head>
 <body>
     <p>Redirecting...</p>
+    <p id="output"></p>
     <script>
         // JavaScript to extract the 'q' parameter from the URL
         function getQueryParam(param) {
@@ -21,7 +22,13 @@
         const decodedValue = decodeURIComponent(queryParamValue);
 
         // Display the result
-        console.log(decodedValue);
+        document.getElementById('output').textContent = decodedValue || 'No query parameter found';
+
+        // Redirect to another link after displaying the result
+        if (decodedValue) {
+            const redirectTo = 'https://www.google.com/maps/search/' + decodedValue;
+            window.location.href = redirectTo;
+        }
     </script>
 </body>
 </html>
