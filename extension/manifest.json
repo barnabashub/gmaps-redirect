@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "GMaps Redirector",
-    "version": 1.0,
+    "version": "1.0",
     "description": "Redirects to Google Maps search based on the 'q' parameter in the URL.",
     "permissions": [
       "activeTab",
