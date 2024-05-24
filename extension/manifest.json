@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "GMaps Redirector",
     "version": "1.0",
-    "description": "Redirects to Google Maps search based on the 'q' parameter in the URL.",
+    "description": "With one click, this Chrome extension allows you to easily jump to Google Maps from Google search without the need for manual and stressful processes. This extension is necessary because in Europe, Google was forced to hide the original Google Maps button from the search results.",
     "permissions": [
       "activeTab",
       "scripting"
