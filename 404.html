@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>redirecting ...</title>
 </head>
+
 <body>
-    <p>Redirecting...</p>
-    <p id="output"></p>
+    <div class="text-center">
+        <h1 class="display-4">GMaps Redirector</h1>
+        <p class="lead">No more missing Google Maps button in Google Search!</p>
+        <br>
+        <p>Redirecting...</p>
+        <p id="output"></p>
+        <br>
+        <p>If nothing happens, just click here, or copy the link:</p>
+        <a href="" id="link">
+            <p id="linkbtn"></p>
+        </a>
+    </div>
     <script>
         // JavaScript to extract the 'q' parameter from the URL
         function getQueryParam(param) {
@@ -29,9 +41,10 @@
             const redirectTo = 'https://www.google.com/maps/search/' + decodedValue;
             //window.location.href = redirectTo;
             document.getElementById('linkbtn').textContent = redirectTo;
+            document.getElementById('link').href = redirectTo;
         }
     </script>
-    <p>If nothing happens, just click here, or copy the link:</p>
-    <a href={{redirectTo}} id="linkbtn"></a>
+
 </body>
+
 </html>
