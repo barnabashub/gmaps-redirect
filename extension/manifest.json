@@ -1,22 +1,24 @@
 {
     "manifest_version": 3,
-    "name": "GMaps Redirector",
-    "version": "1.1",
-    "description": "Jump to Google Maps from searching only with one click! Don't need to do the stressfull process manually in EU neither.",
-    "permissions": [
-      "activeTab",
-      "scripting"
+    "name": "GMaps in Search",
+    "description": "Google Maps is back again in search in the EU too with this extension!",
+    "version": "2.0",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "js": ["content.js"]
+        }
     ],
     "background": {
-      "service_worker": "background.js"
+        "service_worker": "background.js"
     },
     "action": {
-      "default_title": "Redirect",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
+        "default_title": "Redirect",
+        "default_icon": {
+          "16": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+        }
       }
-    }
-  }
-  
+}
