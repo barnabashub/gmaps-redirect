@@ -3,7 +3,7 @@
     "name": "GMaps in Search",
     "description": "Google Maps is back again in search in the EU too with this extension!",
     "version": "2.0",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["activeTab", "scripting", "i18n"],
     "content_scripts": [
         {
             "matches": ["https://www.google.com/*"],

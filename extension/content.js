@@ -1,12 +1,16 @@
 function addListItem() {
+  let mapstext = chrome.i18n.getMessage("mapstext");
   var list = document.querySelector('div[role="list"]');
-  var newItem = `<div role="listitem" data-hveid="CAkQAA" data-ved="2ahUKEwi1xcv-sKmGAxUdvokEHXJFBpYQtoAJKAB6BAgJEAA">
+  var newItem =
+    `<div role="listitem" data-hveid="CAkQAA" data-ved="2ahUKEwi1xcv-sKmGAxUdvokEHXJFBpYQtoAJKAB6BAgJEAA">
                       <a  
                       id="mapslink"
                       href="https://www.google.com/maps/search/"
                       class="LatpMc nPDzT T3FoJb" jsname="VIftV" role="link" data-hveid="CAkQAQ"
                       >
-                        <div jsname="bVqjv" class="YmvwI">Térkép</div>
+                        <div jsname="bVqjv" class="YmvwI">` +
+    mapstext +
+    `</div>
                       </a>
                   </div>`;
   list.innerHTML += newItem;
