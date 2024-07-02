@@ -16,6 +16,13 @@ function addListItem() {
   list.innerHTML += newItem;
 }
 
+function clickableDiv() {
+  var clickableDiv = document.querySelector("div.Lx2b0d");
+  clickableDiv.addEventListener("click", function () {
+    window.location.href = link.href;
+  });
+}
+
 addListItem();
 
 function getQueryParam(param) {
@@ -31,3 +38,5 @@ const decodedValue = decodeURIComponent(queryParamValue);
 
 const link = document.getElementById("mapslink");
 link.href += decodedValue;
+
+clickableDiv();
