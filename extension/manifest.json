@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "GMaps in Search",
-    "description": "Local test now",
-    "version": "2.0",
+    "description": "Jump to Google Maps from searching only with one click! Don't need to do the stressfull process manually in EU neither.",
+    "version": "2.2",
     "permissions": ["activeTab", "scripting"],
     "content_scripts": [
         {
